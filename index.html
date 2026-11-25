@@ -1,0 +1,128 @@
+<!doctype html>
+
+<html lang="pt_BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Single Page - Produtos de Tecnologia</title>
+  <!-- Imoprtação de Fonte no HTML
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />-->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <!--Cabeçalho-->
+    <h1>Produtos de Tecnologia</h1>
+
+    <p class="destaque">
+      Uma atividade prática com HTML, CSS, JavaScript, MySQL, API e Insomnia.
+    </p>
+  </header>
+
+  <nav>
+    <!--Area de Navegação-->
+
+    <a href="#inicio">Inicio</a>
+    <a href="#produtos">Produtos</a>
+    <a href="#sobre">Sobre</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+
+  <main>
+    <!--Corpo do Site-->
+
+    <section id="inicio">
+      <!--Seção-->
+      <!--<article> Cria Subseções-->
+      <h2>Bem-Vindo à Nossa Single Page</h2>
+      <p>
+        Nesta página serão exibidos produtos de tecnologia organizados em
+        cads. Ao clicar em cada produto, será possivel visualizar mais
+        detalhes.
+      </p>
+    </section>
+
+    <section id="produtos">
+      <!--Seção dos Produtos-->
+      <h2>Lista de Produtos</h2>
+
+      <div id="listaProdutos" class="grid">
+        <article class="card">
+          <!--Representa o primeiro Produto-->
+          <!--Notebook-->
+          <img src="imagens/notebook-core-i5.jpg" alt="Notebook aberto, com teclado e tela visíveis." width="318"
+            height="273" />
+          <h3>Notebook Core i5</h3>
+          <p>Notebook par atividades escolares e profissionais.</p>
+          <button type="button" class="btnDetalhes">Ver detalhes</button>
+        </article>
+
+        <article class="card">
+          <!--Mouse-->
+          <img src="imagens/mouse-gamer.jpg" alt="Mouse preto com cabo e detalhes coloridos." width="318"
+            height="273" />
+          <h3>Mouse Gamer</h3>
+          <p>Mouse RGB com botões programáveis e alta precisão.</p>
+          <button type="button" class="btnDetalhes">Ver detalhes</button>
+        </article>
+
+        <article class="card">
+          <!--Teclado-->
+          <img src="imagens/teclado-mecanico.jpg" alt="Teclado preto com teclas e iluminação
+          colorida." width="318" height="273" />
+          <h3>Teclado Mecânico</h3>
+          <p>Teclado com switches mecânicos e alta durabilidade.</p>
+          <button type="button" class="btnDetalhes">Ver detalhes</button>
+        </article>
+
+        <article class="card">
+          <!--Monitor-->
+          <img src="imagens/monitor-24-polegadas.jpg" alt="Monitor preto com base, exibindo uma paisagem na tela"
+            width="318" height="273" />
+          <h3>Monitor 24 Polegadas</h3>
+          <p>Monitor Full HD para estudo e trabalho.</p>
+          <button type="button" class="btnDetalhes">Ver detalhes</button>
+        </article>
+
+        <article class="card">
+          <!--SSD 480GB-->
+          <img src="imagens/ssd-480gb.jpg" alt="Unidade SSD preta com a inscrição 480GB na parte superior." width="318"
+            height="273" />
+          <h3>SSD 480GB</h3>
+          <p>SSD SATA para melhorar o desempenho do computador.</p>
+          <button type="button" class="btnDetalhes">Ver detalhes</button>
+        </article>
+
+        <article class="card">
+          <!--HD 1TB-->
+          <img src="imagens/hd-externo-1tb.jpg" alt="HD externo preto textura geométrica na parte superior" width="318"
+            height="273" />
+          <h3>HD Externo 1TB</h3>
+          <p>Dispositivo portátil para cópia de segurança.</p>
+          <button type="button" class="btnDetalhes">Ver detalhes</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="sobre">
+      <h2>Sobre o Projeto</h2>
+      <p>
+        Este projeto tem como objetivo revisar conceitos de desenvolvimento
+        web, banco de dados, API e testes com Insomnia.
+      </p>
+    </section>
+  </main>
+  <footer>
+    <!--rodapé-->
+    <p>Atividade prática desenvolvida em sala de aula. &copy 2026</p>
+  </footer>
+</body>
+
+</html>

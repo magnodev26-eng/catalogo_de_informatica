@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="pt_BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Contato</h1>
+    <p>Use esta página para entrar em contato sobre o projeto.</p>
+  </header>
+
+  <nav>
+    <!--Area de Navegação-->
+    <a href="index.html#inicio">Inicio</a>
+    <a href="index.html#produtos">Produtos</a>
+    <a href="index.html#sobre">Sobre</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+
+  <main>
+    <section aria-labelledby="titulo-contato">
+      <!--Seção do Formulario-->
+      <h2 id="titulo-contato">Fale Conosco</h2>
+      <p>Preencha todos os campos. Use apenas dados fictícios nesta atividade.</p>
+      <p>Este formulário é um teste local; ele não envia e-mail nem salva menssagens.</p>
+      <!--Formulário-->
+      <form class="form-contato">
+        <div class="campo">
+          <label>Nome</label>
+          <input type="text" id="name" name="nome" placeholder="Digite seu nome" required minlength="2" maxlength="10">
+        </div>
+
+        <div class="campo">
+          <label>E-mail</label>
+          <input type="email" id="email" name="email" placeholder="seuemail@email.com" required>
+        </div>
+
+        <div class="campo">
+          <label for="telefone">Telefone (opicional)</label>
+          <input type="tel" id="telefone" name="telefone" placeholder="(99)99999-9999 ">
+        </div>
+
+        <div class="campo">
+          <label for="assunto">Assunto</label>
+          <select id="assunto" name="assunto" required>
+            <option value="">Selecione um Assunto</option>
+            <option value="duvida">Dúvidas sobre o projeto</option>
+            <option value="produto">Informações sobre produto</option>
+            <option value="sugestao">Sugestão</option>
+            <option value="visita">Visita ao Projeto</option>
+            <option value="outro">Outro assunto</option>
+          </select>
+        </div>
+
+        <fieldset class="preferencia-contato">
+          <legend>Forma preferida de contato</legend>
+          <label class="opcao-contato">
+            <input type="radio" name="preferencia" value="email" required>
+            E-mail
+          </label>
+          <label class="opcao-contato">
+            <input type="radio" name="preferencia" value="telefone">
+            Telefone
+          </label>
+        </fieldset>
+
+        <div class="campo">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite aqui sua Mensagem" required
+            minlength="10" maxlength="500"></textarea>
+        </div>
+
+        <label class="opcao-contato confirmacao-contato">
+          <input type="checkbox" name="deseja_retorno" value="sim">
+          Desejo receber retorno sobre essa solicitação.
+        </label>
+
+        <div class="acoes-formulario">
+          <button type="submit">Enviar</button>
+          <button type="reset">Limpar</button>
+        </div>
+
+      </form>
+
+
+      <p><a href="index.html">Voltar ao Catálogo</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <!--rodapé-->
+    <p>Atividade prática desenvolvida em sala de aula. &copy 2026</p>
+  </footer>
+</body>
+
+</html>

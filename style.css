@@ -1,0 +1,271 @@
+/*Importação de Fonte via CSS*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+
+
+
+/*Seletor * é o seletor universal*/
+* {
+  margin: 0;
+  /*zerar as margens*/
+  padding: 0;
+  /*zerar os paddings*/
+  box-sizing: border-box;
+  /*defini os calculos pelo border-box*/
+}
+
+
+/*Aparência incial do Catálogo*/
+
+body {
+  font-family: "Roboto", sans-serif;
+  /*Fonte importada e fonte alternativa*/
+  font-size: 16px;
+  /*Tamanho da Fonte*/
+  line-height: 1.5;
+  /*Espaçamento de Linhas*/
+  color: #333333;
+  /*Cor da Fonte*/
+  background-color: #f4f4f4;
+  /*Cor do Fundo*/
+}
+
+main {
+  width: 90%;
+  /*Define o espaço maximo da largura em porcentagem*/
+  margin: auto;
+  /*Deixa a margem automatica*/
+  padding: 20px;
+}
+
+header {
+  background-color: #1f2937;
+  /*cor do fundo*/
+  color: #ffffff;
+  /*cor da fonte*/
+  text-align: center;
+  /*alinha os textos ao centro*/
+  padding: 30px;
+  /* espaçamento para descolar o texto em ambas direções*/
+}
+
+nav {
+  background-color: #374151;
+  text-align: center;
+  padding: 15px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  /*remove a linha do link*/
+  font-weight: bold;
+  /*destaca a fonte "negrito"*/
+  margin: 0 15px;
+  /*0 superior e inferior 15px esquerda e direita*/
+}
+
+nav a:hover {
+  color: #fbbf24;
+}
+
+/*Navegação via teclado*/
+nav a:focus,
+.card button:focus {
+  outline: 3px solid #fbbf24;
+  outline-offset: 3px;
+}
+
+section {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  /*arredonda as bordas*/
+}
+
+section h2 {
+  margin-bottom: 15px;
+  color: #1f2937;
+
+}
+
+.card {
+  border: 1px solid #dddddd;
+  /*Adiciona borda*/
+  padding: 20px;
+  /*espaçamento interno - superior, direito, inferior e esquerdo*/
+  border-radius: 10px;
+  min-width: 0;
+  /*Define a largura minima*/
+  text-align: center;
+  /*alinha o texto ao centro*/
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  /*cria uma sombra valores em deslocamento
+  horizontal 0, vertical 2px suavizção 5px a cor em rgb com o alfa 0.1"porcentagem"*/
+  background-color: #f9fafb;
+  /*Cor do Fundo*/
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.card img {
+  width: 50%;
+  /*Ocupa 50% largura disponivel no elemento*/
+  height: 100px;
+  /*Define tamanho da largura*/
+  object-fit: cover;
+  /*contralo como a imagem se acomda em sua caixa e 
+  cover preenche na proporção da caixa*/
+}
+
+.card h3 {
+
+  margin-top: 15px;
+  margin-bottom: 10px;
+  color: #1f2937;
+}
+
+.card p {
+  padding: 0 15px;
+  margin-bottom: 20px;
+  color: #555555;
+}
+
+.card button {
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: #1d4ed8;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+footer {
+  background-color: #1f2937;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px;
+}
+
+/*Formulario página de contato*/
+
+.form-contato {
+  max-width: 600px;
+  margin: 20px 0;
+}
+
+.campo {
+  margin-bottom: 15px;
+}
+
+.campo label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font: inherit;
+}
+
+/*navegação por teclado*/
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus,
+.acoes-formulario button:focus {
+  outline: 3px solid #fbbf24;
+  outline-offset: 2px;
+}
+
+.acoes-formulario {
+  display: flex;
+  flex-wrap: wrap;
+  /* permite outra linha quando necessario */
+  gap: 10px;
+}
+
+.acoes-formulario button {
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font: inherit;
+  cursor: pointer;
+}
+
+.acoes-formulario button:hover {
+  background-color: #1d4ed8;
+}
+
+.preferencia-contato {
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  min-width: 0;
+}
+
+.preferencia-contato legend {
+  padding: 0 5px;
+  font-weight: bold;
+}
+
+.opcao-contato {
+  padding: 15px;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.confirmacao-contato {
+  margin-bottom: 20px;
+}
+
+/*navegação por teclado*/
+.opcao-contato input:focus {
+  outline: 3px solid #fbbf24;
+  outline-offset: 2px;
+}
+
+/* ----------------  RESPONSIVIDADE ------------------    */
+/*Abaixo dos 900px*/
+@media(max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*abaixo de 440px*/
+/*está para resolução do iPhone 16 Pro Max para testes*/
+@media(max-width: 440px) {
+  h1 {
+    color: red;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
